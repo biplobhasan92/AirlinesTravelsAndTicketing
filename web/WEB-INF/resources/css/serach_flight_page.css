@@ -1,0 +1,59 @@
+.only_here{
+    background-image:  url(../images/airlins.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.serach_flight_area{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.search_flight_row{
+    border-radius: 5px;
+    padding: 32px;
+    opacity: 0.9;
+}
+.radio_float{
+
+}
+.serach_flight_area_heading{
+
+    border-bottom: 1px solid #ddd;
+
+}
+.heading_text_book p{padding: 0px;margin: 0;font-size: 21px; color: #fff}
+.heading_text_book h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+.second_gradient_bg{
+    /*    background-image: url('../images/Gulf_Air_Airbus.jpg');
+        background-size: cover;
+        position: relative;*/
+}
+.serach_flight_area_menu{
+    background-color: #A29061;
+    padding: 15px;
+}
+.serach_flight_menu{}
+.serach_flight_menu ul{margin:0;padding:0;list-style:none;color:#666;}
+.serach_flight_menu ul li{float:left;border-right:1px solid #fff}
+.serach_flight_menu ul li:last-child{border-right:none}
+.serach_flight_menu ul li a{color: #fff;
+                            display: block;
+                            font-size: 15px;
+                            font-weight: normal;
+                            padding: 10px 22px;
+                            text-decoration: none;}
+.serach_flight_menu ul li a:hover{color:#fff;background:#003082}
+.form_element{
+    background: #fff;
+}

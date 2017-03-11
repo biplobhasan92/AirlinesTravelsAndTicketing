@@ -1,0 +1,138 @@
+@import "compass/css3";
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* Colors */	
+/* ---------------------------------------- */ 
+/*$border: 		 #c6c6c6;
+$border-focus: #9FB1C1;
+$brand-color:  #1b3d4d;
+$booking-green: #bdcc00;
+$asphalt: 		#506982;
+
+*{
+        @include box-sizing(border-box);
+}*/
+body{
+    text-align: center;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 400;
+
+}
+
+.cruise_body{
+    background: url(../images/cruise.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+    width: 100%;
+    height: 100%;
+}
+.cruise_body img {
+    opacity: 0.7;
+}
+.form_area{
+    background: #fff;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 5px;   
+}
+a{
+    text-decoration: none;
+}
+.info-text{
+    text-align: left;
+    width: 100%;
+}
+header, form{
+    padding: 4em 10%;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+h2.heading{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: left;
+    color: #506982;
+    border-bottom: 1px solid #506982;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+
+button{
+    cursor: pointer;
+    background-color: #224C10;
+    border: none;
+    color: #fff;
+    width: 250px;
+    padding: 12px 0;
+    float: right;
+    &:hover{
+        background-color: #224C60;
+    }
+}
+
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+.grid {
+    background: #fff;
+
+
+    &:after {
+        /* Or @extend clearfix */
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+[class*='col-'] {
+    float: left;
+    padding-right: 10px;
+    .grid &:last-of-type {
+        padding-right: 0;
+    }
+}
+.col-2-3 {
+    width: 66.66%;
+}
+.col-1-3 {
+    width: 33.33%;
+}
+.col-1-2 {
+    width: 50%;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+@media (max-width: 760px) {
+    .col-1-4-sm, .col-1-3, .col-2-3 {
+        width: 100%;
+    }
+    [class*='col-'] {
+        padding-right: 0px;
+    }  
+}
+
+.col-1-8 {
+    width: 12.5%;
+}

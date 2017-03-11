@@ -1,0 +1,591 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -----------default css==========-------------------*/
+
+
+body{
+    font-family: Quicksand;
+
+}
+h1, h2, h3, h4, h5, p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0;
+    font-family: inherit;
+
+}
+.custom_nav{
+    background: #A29061;
+    padding: 15px;
+
+}
+.section_pad{
+    padding-top: 30px;
+
+}
+nav_cust ul li{
+    color: #fff;
+}
+h2 {
+    color: blueviolet; 
+}
+
+/*   ===============   0C0C0C     NAV BAR START =========== */
+.custom_nav_area{
+    background: #A29061;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    padding-bottom: 10px;
+}
+.custom_nav_area::after, .img_logo img, .main_menu ul li a{
+    transition: .8s;
+}
+.is-sticky .custom_nav_area:after{
+    background: #847346;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+
+
+}
+.is-sticky .custom_nav_area{
+    max-height: 65px;
+    padding-bottom: 10px;
+}
+.img_logo img{
+    margin-top: 10px;
+    height: 70px;
+}
+.is-sticky .img_logo img{
+    height: 50px;
+    width: auto;
+
+}
+.main_menu *{
+    z-index: 99999
+}
+.main_menu{
+    float: right;
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 25px;
+    min-height: 55px;
+    line-height: 16px;
+}
+.main_menu ul{margin:0;padding:0;list-style:none;color:#666;}
+.main_menu ul li{float:left;border-right:1px solid #fff}
+.main_menu ul li:last-child{border-right:none}
+.main_menu ul li a{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+.is-sticky .main_menu ul li a{
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 13px;
+    text-decoration: none;}
+.main_menu ul li a:hover{color:#fff;background:#003082}
+
+
+/*.main_menu ul{margin:0;padding:0;list-style:none;color:#666;}
+.main_menu ul li{float:left;border-right:1px solid #fff}
+.main_menu ul li:last-child{border-right:none}
+.main_menu ul li a{
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 9px 13px;
+    text-decoration: none;}
+.main_menu ul li a:hover{color:#fff;background:#003082}*/
+
+
+/*   ===============        NAV BAR END =========== */
+
+
+/*  Drop Down Menu */
+
+
+
+/*.main_menu ul li ul{display:none;position:absolute; width: 400px}
+.main_menu ul li:hover ul{display:block}
+.main_menu ul li ul{background:#003082;}
+.main_menu ul li ul li{float:none;border-bottom:1px dashed #fff}
+.main_menu ul li ul li a{display:inline-black;font-weight:normal;font-size:12px}
+.main_menu ul li ul li a:hover{color:#00B1C7;}*/
+
+
+
+/*Slider Images*/
+
+.slider_area{
+
+    height: 973px;
+    margin-top: 0px;
+    padding-top: 0px;
+
+    position: relative;
+}
+.gradient_bg{
+    background-image: url('../images/back_nature.jpg');
+    background-size: cover;
+    position: relative;
+}
+.parallax-bg{
+    position: absolute; left: 0;top:0; width: 100%;height: 100%;
+    background-attachment: fixed;
+}
+.gradient_text{
+    /*color: #fff;*/
+    font-size: 16px;
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+.gradient_text h2{
+    font-size: 33px;
+    margin-top: 20px;
+}
+.slider_welcome_text p{
+    font-size: 29px;
+    margin-left: 313px;
+    width: 507px;
+}
+.Main_booking_btn{
+    margin-left: 570px;
+    margin-top: 207px;
+    position: absolute;
+    height: 42px;
+    width: 150px;
+    font-size: 17px;
+}
+.slider_welcome_text h2{
+    color: #fff;
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 322px;
+    width: 507px;
+    padding-top: 64px;
+}
+.gradient_text h2, p{
+    position: absolute;
+    color: #fff;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-top: 30px;
+    font-family: Quicksand;
+
+}
+.gradient_text img{
+
+}
+.gradient_text::after{
+    position: absolute;
+    height: 100%;
+    background: #666 none repeat scroll 0 0;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    margin-top: 25px;
+}
+.sreach_div{
+    align-items: center;
+    background-color: #adb1b2;
+    border-radius: 0;
+    height: 278px;
+    opacity: 0.7;
+    padding: 20px;
+    position: relative;
+    width: 475px;
+
+} 
+.fa-plane, .fa-briefcase, .fa-pencil-square-o, .fa-clock-o{
+    font-size: 30px;
+    height: 50px;
+    width: 55px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.nav-tabs > li > a{
+    display: block;
+    padding: 12px 20px;
+    position: relative;
+}
+.nav-tabs > li > a:hover{
+    background: #003082;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 0px;
+    border: none;
+}
+.nav-tabs > ul {
+    border-bottom: 0px;
+}
+.fa_text_edit{
+    font-size: 11px;
+    margin-top: 5px;
+    color: #fff;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #003082;
+    border-color: #ddd #ddd transparent;
+    border-image: none;
+    border-radius: 0px;
+    border-width: 0px;
+    color: #555;
+    cursor: default;
+    opacity: none;
+}
+.book_btn{
+    margin-left: 400px;
+    margin-top: 207px;
+    position: absolute;
+}
+.section-title{
+    position: absolute;
+}
+.white_text{}
+.pak_heading{}
+
+.container{
+    margin-top: 0px;
+}
+.slider_img {
+
+
+}
+.slider_area img{
+    /*        heheight: 473px;
+            width: 1348px;*/
+}
+
+/*   slider advertise   row*/
+.slider_search_flight_row{
+    float: left;
+    margin-top:35px;color: #fff;
+    padding: 15px;
+}
+.slider_add_first_row{
+    float: left;position: absolute;
+    margin-top:15px;color: #fff;
+
+}
+.slider_add_second_row{
+    color: #fff;
+    float: left;
+    margin-top: 315px;
+    position: absolute;
+}
+
+
+
+/*   slider advertise   row*/
+
+/*Slider Images*/
+
+/*=======Flight Search Tab Example========*/
+#exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+
+#exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+.tab-pane, .active{
+    background-color: #003082;
+
+}
+
+.nav-tabs{
+    border-bottom: 0px;
+}
+.tab-search-area h2{
+    font-family: inherit;
+    font-size: 27px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-left: 11px;
+    margin-top: 6px;
+}
+.wel_back{
+    background: #003082 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    height: 167px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 8px;
+    position: absolute;
+    width: 430px;
+}
+.flight_input_text{
+    margin-top: 56px;
+}
+.flight_input_text input, select{
+    height: 28px;
+    width: 175px;
+    margin-left: 10px;
+    color: #666;
+    background: #fff;
+}
+.btn_search_flight{
+    float: right;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+.btn_search_details{
+    float: right;
+    margin-right: 38px;
+    margin-top: 25px;
+
+}
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+/*=======Flight Search Tab Example========*/
+
+
+/*=======Insurence Area service_area========*/
+.service_area{
+    background: #D3D4D5;
+    padding-bottom: 45px;
+    padding-top: 25px;
+
+}
+.heading_text{
+    margin-bottom: 45px;
+}
+.heading_text p{
+    color: #003082;
+    font-size: 22px;
+    margin-left: 425px;
+    margin-top:  10px;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    font-weight: normal;
+
+}
+.heading_text h3{
+    font-family: tahama;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    color: #A29061;
+
+}
+.owl-item{
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.item {
+    width: 135px;
+    height: 135px;
+    float: left;
+    background: #f5f5f5;
+    margin-right: 25px;
+}
+.item a{
+    text-decoration: none;
+}
+.item:hover{
+
+    background: #A29061
+}
+.hp-service-item{
+    margin-top: 2px;
+}
+.hp-service-item:hover{
+    color: #fff;
+}
+.hp-service-item h5{
+    font-family: inherit;
+    font-size: 17px;
+    text-align: center;
+    font-family: inherit;
+}
+.hp-service-icon{
+    font-size: 48px;
+    margin-left: 43px;
+    text-align: center;
+    font-weight: normal;
+}
+.center_beauty{
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+hp-service-txt{
+
+}
+
+/*=======Insurence Area service_area END========*/
+
+
+/*=======Destination Start========*/
+
+.destination-area{
+    background-image: url("../images/pattren.png");
+    padding: 29px;
+}
+.destination_header{
+    margin-bottom: 20px;
+}
+.destination_header h1{
+
+    font-size: 30px;
+}
+.destination-area h1{
+    padding-bottom: 5px;
+    color: #003082;
+    font-size: 25px;
+
+}
+.destination-area h2{}
+.destination-area h3{
+    font-size: 20px;
+    padding-bottom: 8px;
+    color: #6E6E6E;
+}
+.destination-area p{}
+.destination-area p, h1, h2{
+    color: #000;
+}
+
+/*=======Destination End========*/
+
+/*-============-------======-------------Footer Top Area-============-------======-------------*/
+
+.footer_top_area{
+    padding: 30px;
+    background: #F6F6F7;
+}
+.footer_top{}
+.footer_top h2{
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    color: #003082;}
+.footer_top ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;}
+.footer_top ul li{
+    width: 138px;
+    padding-top: 5px;
+    padding-bottom: 5px;}
+.footer_top ul li a{
+    color: #999;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+.footer_top ul li a:hover{}
+
+.footer_in{
+    background-image:  url("../images/patren_2.png");
+    max-height: 30px;
+}
+
+
+
+
+
+/*-============-------======-------------Footer Top End -============-------======-------------*/
+
+/*=======Booking Page Start========*/
+.booking_header{
+    background-image: url('../images/b22.jpg');
+    /*background: #666;*/
+    color: #fff;
+    width: 100%;
+    padding: 6px;
+    opacity: 0.4;
+
+}
+.row_custom{
+
+}
+
+
+
+
+/*=======Booking Page End========*/

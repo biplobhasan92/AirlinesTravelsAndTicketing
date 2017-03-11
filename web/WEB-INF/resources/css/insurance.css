@@ -1,0 +1,25 @@
+.gradient_text{
+    /*color: #fff;*/
+    font-size: 16px;
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+.gradient_text h2{
+    font-size: 33px;
+    margin-top: 20px;
+}
+.row{
+    margin-bottom: 45px;
+}
+fieldset {
+    border: thin solid #ccc; 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fbfbfb;
+}
+
+h2{
+    text-align: center;
+}
